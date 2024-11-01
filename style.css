@@ -1,0 +1,321 @@
+
+body {
+    font-family: "DynaPuff", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #ffffff; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ff3d00;
+}
+
+.header__logo {
+    color: #000000; 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin-left: 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/background2.png');
+    background-size: contain; /* Ensure entire image fits */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff3d00;
+    color: #ffffff;
+    padding: 60px 40px;
+    position: relative;
+}
+
+.hero__content {
+    max-width: 50%;
+}
+
+.hero__title {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.hero__subtitle {
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.hero__btn {
+    border-radius: 4px;
+    padding: 15px 30px;
+    background-color: #b5ff66;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hero__image img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Description Section */
+.description {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.description__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description__text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 40px;
+    background-color: #b5ff66;
+}
+
+.products__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.products__grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product__item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.product__image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product__name {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product__btn {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Rules Section */
+.rules {
+    background-image: url('images/bg-grid2.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 40px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+.rules__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rules__text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000; /* Black text color */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.rules__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rules__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rules__image img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333333;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer__item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 24px;
+}
+
+/* Responsive Design */
+/* Adjust Header */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__nav-item {
+        margin-left: 0;
+    }
+}
+
+/* Adjust Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero__content {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero__image img {
+        max-width: 150px;
+    }
+}
+
+/* Adjust Description Section */
+@media (max-width: 768px) {
+    .description__title {
+        font-size: 1.8rem;
+    }
+
+    .description__text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjust Products Section */
+@media (max-width: 768px) {
+    .products__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product__item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .product__name {
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjust Rules Section */
+@media (max-width: 768px) {
+    .rules__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rules__text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .rules__image img {
+        max-width: 90%;
+    }
+}
+
+/* Adjust Footer */
+@media (max-width: 768px) {
+    .footer__list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer__item {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
+
